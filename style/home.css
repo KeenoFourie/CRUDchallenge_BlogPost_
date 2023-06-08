@@ -32,10 +32,86 @@ body {
 }
 /* Footer Styling */
 #foot_css {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding: 1rem;
     background-color: black;
     color: teal;
     width: 100%;
+}
+/* landing page */
+/* heading */
+#heading {
+    height: 90vh;
+    width: 100%;
+}
+#sub1 {
+    margin-top: 25vh;
+}
+#sub1, #sub2 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+#featured_post_button_css {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    padding: 0.3rem;
+    font-size: small;
+    font-weight: bold;
+}
+#featured_post_button_css:hover {
+    color: teal;
+    background-color: black;
+}
+/* featured post */
+#featured_post {
+    height: 100vh;
+    width: 100%;
+}
+#heading_features {
+    font-size: xx-large;
+    font-weight: bold;
+}
+#button_blogPost {
+    color: black;
+    text-decoration: none;
+    padding: 0.3rem;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    font-size: small;
+    font-weight: bold;
+}
+#button_blogPost:hover {
+    color: teal;
+    background-color: black;
+}
+/* cards */
+#featured_post_cards {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.345);
+    color: black;
+    border: 2px solid black;
+    margin: 1rem;
+}
+
+
+
+
+/* line between sections */
+#line_through {
+    border-top: 3px solid black;
+    margin-bottom: 2rem;
+    margin: 3rem;
+}
+/* bottom space */
+#bottom_space {
+    border-top: 2px solid transparent;
+    margin-bottom: 20rem;
+    margin: 7rem;
 }
