@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,40 +12,98 @@
     <link rel="stylesheet" href="../style/admin.css">
     <title>Admin</title>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <!-- Image/Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="https://cdn.betterttv.net/emote/618c77311f8ff7628e6d5b8f/2x.gif" alt="Logo" loading="lazy">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- links -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../html/admin.html">ADMIN</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../html/blogpost.html">BLOG POST</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn.betterttv.net/emote/618c77311f8ff7628e6d5b8f/2x.gif" alt="Logo" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- links -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/admin.html">ADMIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../html/blogpost.html">BLOG POST</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    
+    </nav>
+    <main class="container-fluid">
+        <!-- Page Heading -->
+        <div class="heading">
+            <h1>Admin Page</h1>
+        </div>
+        <!-- Create new blog buttton & Modal -->
+        <div class="modal-add">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create New Blog
+            </button>
 
-      
-      <!-- Footer -->
-      <footer>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new Blog</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Title</p>
+                            <input type="text"class="modal-input input1" placeholder="Enter Title..">
+                            <p>ImageURL</p>
+                            <input type="" class="modal-input input2"  placeholder="Enter Image URL..">
+                            <p>Despcription</p>
+                            <input type="text" class="modal-input input3"  placeholder="Enter Description..">
+                            <p>Content</p>
+                            <input type="text" class="modal-input input4"  placeholder="Enter Content...">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-dark newblog">Add New Blog</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="admintable">
+            <table>
+                <thead class="header">
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>ImageUrl</th>
+                    <th>Description</th>
+                    <th>Content</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="blogs">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
         COPYRIGHT &copy POWERED BY KEENO & CODI 2023
-      </footer>
+    </footer>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -53,4 +112,5 @@
     <!-- Javascript -->
     <script src="../script/admin.js"></script>
 </body>
+
 </html>

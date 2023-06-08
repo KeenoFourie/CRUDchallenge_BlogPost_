@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+}
+
+.modal-add{
+    text-align: center;
+    margin: 2rem;
+}
+
+.heading{
+    text-decoration: underline;
+    text-align: center;
+    margin: 2rem;
+}
+
+.modal-input{
+    width: 100%;
+} 
+
+p{
+    text-decoration: underline;
+}
+
+tr{
+    border: 2px solid black;
+}
+
+#td1{
+    padding: 1rem;
+}
+#td2{
+    padding: 1rem;
+}
+#td3{
+    padding: 1rem;
+}
+#td4{
+    padding: 1rem;
+}
+#td5{
+    padding: 1rem;
+}
+#td6{
+    padding: 1rem;
+}
+#td7{
+    padding: 1rem;
+}
+
+.image{
+    width: 20rem;
+    
+}
