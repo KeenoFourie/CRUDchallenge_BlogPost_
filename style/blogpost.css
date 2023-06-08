@@ -32,7 +32,7 @@ body {
 }
 /* Footer Styling */
 #foot_css {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding: 1rem;
     background-color: black;
