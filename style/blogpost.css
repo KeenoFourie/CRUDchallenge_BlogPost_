@@ -39,3 +39,9 @@ body {
     color: teal;
     width: 100%;
 }
+/* bottom space */
+#bottom_space {
+    border-top: 2px solid transparent;
+    margin-bottom: 10rem;
+    margin: 3rem;
+}
